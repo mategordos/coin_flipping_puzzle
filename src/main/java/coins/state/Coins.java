@@ -2,6 +2,7 @@ package coins.state;
 
 import org.apache.commons.math3.util.Combinations;
 
+import java.sql.SQLOutput;
 import java.util.*;
 
 /**
@@ -189,6 +190,7 @@ public class Coins implements Cloneable {
         var coins = new Coins(7, 3);
         System.out.println(coins);
         System.out.println(coins.getFlips());
+        System.out.println(coins.hashCode());
     }
 
 }
