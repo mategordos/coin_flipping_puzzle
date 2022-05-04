@@ -3,8 +3,7 @@ package coins.state;
 import org.apache.commons.math3.util.CombinatoricsUtils;
 import org.junit.jupiter.api.Test;
 
-import java.util.BitSet;
-import java.util.List;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -65,18 +64,11 @@ class CoinsTest {
     }
 
     @Test
-    void testEquals() {
-
-    }
-
-    @Test
     void testHashCode() {
-
-    }
-
-    @Test
-    void testClone() {
-
+        BitSet bs = new BitSet(7);
+        bs.set(0,7);
+        assertEquals(new Coins(7,3,bs).hashCode(), state2.hashCode());
+        assertEquals(new Coins(7,3).hashCode(), state1.hashCode());
     }
 
     @Test

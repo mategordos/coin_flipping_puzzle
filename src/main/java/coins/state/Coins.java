@@ -2,7 +2,6 @@ package coins.state;
 
 import org.apache.commons.math3.util.Combinations;
 
-import java.sql.SQLOutput;
 import java.util.*;
 
 /**
